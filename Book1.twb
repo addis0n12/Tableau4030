@@ -1,0 +1,502 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0807.0327                               -->
+<workbook original-version='18.1' source-build='2024.2.2 (20242.24.0807.0327)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='911_Calls_for_Service' inline='true' name='federated.1nvtpqf1qz7u6g16aj69y07g0e1x' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='911_Calls_for_Service' name='textscan.0466g111gij4n9183743g0majnmv'>
+            <connection class='textscan' directory='C:/Users/Addis/Downloads/kaggleDataset' filename='911_Calls_for_Service.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0466g111gij4n9183743g0majnmv' name='911_Calls_for_Service.csv' table='[911_Calls_for_Service#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='integer' name='recordId' ordinal='0' />
+            <column datatype='string' name='callKey' ordinal='1' />
+            <column datatype='string' name='callDateTime' ordinal='2' />
+            <column datatype='string' name='priority' ordinal='3' />
+            <column datatype='string' name='district' ordinal='4' />
+            <column datatype='string' name='description' ordinal='5' />
+            <column datatype='string' name='callNumber' ordinal='6' />
+            <column datatype='string' name='incidentLocation' ordinal='7' />
+            <column datatype='string' name='location' ordinal='8' />
+            <column datatype='string' name='Neighborhood' ordinal='9' />
+            <column datatype='string' name='PoliceDistrict' ordinal='10' />
+            <column datatype='integer' name='PolicePost' ordinal='11' />
+            <column datatype='integer' name='CouncilDistrict' ordinal='12' />
+            <column datatype='string' name='SheriffDistricts' ordinal='13' />
+            <column datatype='string' name='Community_Statistical_Areas' ordinal='14' />
+            <column datatype='string' name='Census_Tracts' ordinal='15' />
+            <column datatype='integer' name='ZIPCode' ordinal='16' />
+            <column datatype='integer' name='NeedsSync' ordinal='17' />
+            <column datatype='integer' name='ESRI_OID' ordinal='18' />
+            <column datatype='string' name='F20' ordinal='19' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0466g111gij4n9183743g0majnmv' name='911_Calls_for_Service.csv' table='[911_Calls_for_Service#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+            <column datatype='integer' name='recordId' ordinal='0' />
+            <column datatype='string' name='callKey' ordinal='1' />
+            <column datatype='string' name='callDateTime' ordinal='2' />
+            <column datatype='string' name='priority' ordinal='3' />
+            <column datatype='string' name='district' ordinal='4' />
+            <column datatype='string' name='description' ordinal='5' />
+            <column datatype='string' name='callNumber' ordinal='6' />
+            <column datatype='string' name='incidentLocation' ordinal='7' />
+            <column datatype='string' name='location' ordinal='8' />
+            <column datatype='string' name='Neighborhood' ordinal='9' />
+            <column datatype='string' name='PoliceDistrict' ordinal='10' />
+            <column datatype='integer' name='PolicePost' ordinal='11' />
+            <column datatype='integer' name='CouncilDistrict' ordinal='12' />
+            <column datatype='string' name='SheriffDistricts' ordinal='13' />
+            <column datatype='string' name='Community_Statistical_Areas' ordinal='14' />
+            <column datatype='string' name='Census_Tracts' ordinal='15' />
+            <column datatype='integer' name='ZIPCode' ordinal='16' />
+            <column datatype='integer' name='NeedsSync' ordinal='17' />
+            <column datatype='integer' name='ESRI_OID' ordinal='18' />
+            <column datatype='string' name='F20' ordinal='19' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[911_Calls_for_Service.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;\\t&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recordId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[recordId]</local-name>
+            <parent-name>[911_Calls_for_Service.csv]</parent-name>
+            <remote-alias>recordId</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[911_Calls_for_Service.csv_0E9B46FA52614E7EA3DB7CDC71279661]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>callKey</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[callKey]</local-name>
+            <parent-name>[911_Calls_for_Service.csv]</parent-name>
+            <remote-alias>callKey</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[911_Calls_for_Service.csv_0E9B46FA52614E7EA3DB7CDC71279661]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>callDateTime</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[callDateTime]</local-name>
+            <parent-name>[911_Calls_for_Service.csv]</parent-name>
+            <remote-alias>callDateTime</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[911_Calls_for_Service.csv_0E9B46FA52614E7EA3DB7CDC71279661]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>priority</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[priority]</local-name>
+            <parent-name>[911_Calls_for_Service.csv]</parent-name>
+            <remote-alias>priority</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[911_Calls_for_Service.csv_0E9B46FA52614E7EA3DB7CDC71279661]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>district</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[district]</local-name>
+            <parent-name>[911_Calls_for_Service.csv]</parent-name>
+            <remote-alias>district</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[911_Calls_for_Service.csv_0E9B46FA52614E7EA3DB7CDC71279661]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[911_Calls_for_Service.csv]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[911_Calls_for_Service.csv_0E9B46FA52614E7EA3DB7CDC71279661]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>callNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[callNumber]</local-name>
+            <parent-name>[911_Calls_for_Service.csv]</parent-name>
+            <remote-alias>callNumber</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[911_Calls_for_Service.csv_0E9B46FA52614E7EA3DB7CDC71279661]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>incidentLocation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[incidentLocation]</local-name>
+            <parent-name>[911_Calls_for_Service.csv]</parent-name>
+            <remote-alias>incidentLocation</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[911_Calls_for_Service.csv_0E9B46FA52614E7EA3DB7CDC71279661]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[location]</local-name>
+            <parent-name>[911_Calls_for_Service.csv]</parent-name>
+            <remote-alias>location</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[911_Calls_for_Service.csv_0E9B46FA52614E7EA3DB7CDC71279661]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Neighborhood</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Neighborhood]</local-name>
+            <parent-name>[911_Calls_for_Service.csv]</parent-name>
+            <remote-alias>Neighborhood</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[911_Calls_for_Service.csv_0E9B46FA52614E7EA3DB7CDC71279661]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PoliceDistrict</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PoliceDistrict]</local-name>
+            <parent-name>[911_Calls_for_Service.csv]</parent-name>
+            <remote-alias>PoliceDistrict</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[911_Calls_for_Service.csv_0E9B46FA52614E7EA3DB7CDC71279661]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PolicePost</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PolicePost]</local-name>
+            <parent-name>[911_Calls_for_Service.csv]</parent-name>
+            <remote-alias>PolicePost</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[911_Calls_for_Service.csv_0E9B46FA52614E7EA3DB7CDC71279661]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CouncilDistrict</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CouncilDistrict]</local-name>
+            <parent-name>[911_Calls_for_Service.csv]</parent-name>
+            <remote-alias>CouncilDistrict</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[911_Calls_for_Service.csv_0E9B46FA52614E7EA3DB7CDC71279661]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SheriffDistricts</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SheriffDistricts]</local-name>
+            <parent-name>[911_Calls_for_Service.csv]</parent-name>
+            <remote-alias>SheriffDistricts</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[911_Calls_for_Service.csv_0E9B46FA52614E7EA3DB7CDC71279661]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Community_Statistical_Areas</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Community_Statistical_Areas]</local-name>
+            <parent-name>[911_Calls_for_Service.csv]</parent-name>
+            <remote-alias>Community_Statistical_Areas</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[911_Calls_for_Service.csv_0E9B46FA52614E7EA3DB7CDC71279661]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Census_Tracts</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Census_Tracts]</local-name>
+            <parent-name>[911_Calls_for_Service.csv]</parent-name>
+            <remote-alias>Census_Tracts</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[911_Calls_for_Service.csv_0E9B46FA52614E7EA3DB7CDC71279661]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZIPCode</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ZIPCode]</local-name>
+            <parent-name>[911_Calls_for_Service.csv]</parent-name>
+            <remote-alias>ZIPCode</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[911_Calls_for_Service.csv_0E9B46FA52614E7EA3DB7CDC71279661]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NeedsSync</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NeedsSync]</local-name>
+            <parent-name>[911_Calls_for_Service.csv]</parent-name>
+            <remote-alias>NeedsSync</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[911_Calls_for_Service.csv_0E9B46FA52614E7EA3DB7CDC71279661]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ESRI_OID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ESRI_OID]</local-name>
+            <parent-name>[911_Calls_for_Service.csv]</parent-name>
+            <remote-alias>ESRI_OID</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[911_Calls_for_Service.csv_0E9B46FA52614E7EA3DB7CDC71279661]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F20</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F20]</local-name>
+            <parent-name>[911_Calls_for_Service.csv]</parent-name>
+            <remote-alias>F20</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[911_Calls_for_Service.csv_0E9B46FA52614E7EA3DB7CDC71279661]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Census Tracts' datatype='string' name='[Census_Tracts]' role='dimension' type='nominal' />
+      <column caption='Community Statistical Areas' datatype='string' name='[Community_Statistical_Areas]' role='dimension' type='nominal' />
+      <column caption='Council District' datatype='integer' name='[CouncilDistrict]' role='measure' type='quantitative' />
+      <column caption='Esri Oid' datatype='integer' name='[ESRI_OID]' role='measure' type='quantitative' />
+      <column caption='Needs Sync' datatype='integer' name='[NeedsSync]' role='measure' type='quantitative' />
+      <column caption='Police District' datatype='string' name='[PoliceDistrict]' role='dimension' type='nominal' />
+      <column caption='Police Post' datatype='integer' name='[PolicePost]' role='measure' type='quantitative' />
+      <column caption='Sheriff Districts' datatype='string' name='[SheriffDistricts]' role='dimension' type='nominal' />
+      <column aggregation='Sum' caption='ZIP Code' datatype='integer' default-format='*00000' name='[ZIPCode]' role='dimension' semantic-role='[ZipCode].[Name]' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='911_Calls_for_Service.csv' datatype='table' name='[__tableau_internal_object_id__].[911_Calls_for_Service.csv_0E9B46FA52614E7EA3DB7CDC71279661]' role='measure' type='quantitative' />
+      <column caption='Call Date Time' datatype='string' name='[callDateTime]' role='dimension' type='nominal' />
+      <column caption='Call Key' datatype='string' name='[callKey]' role='dimension' type='nominal' />
+      <column caption='Call Number' datatype='string' name='[callNumber]' role='dimension' type='nominal' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='District' datatype='string' name='[district]' role='dimension' type='nominal' />
+      <column caption='Incident Location' datatype='string' name='[incidentLocation]' role='dimension' type='nominal' />
+      <column caption='Location' datatype='string' name='[location]' role='dimension' type='nominal' />
+      <column caption='Priority' datatype='string' name='[priority]' role='dimension' type='nominal' />
+      <column caption='Record Id' datatype='integer' name='[recordId]' role='dimension' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='911_Calls_for_Service.csv' id='911_Calls_for_Service.csv_0E9B46FA52614E7EA3DB7CDC71279661'>
+            <properties context=''>
+              <relation connection='textscan.0466g111gij4n9183743g0majnmv' name='911_Calls_for_Service.csv' table='[911_Calls_for_Service#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
+                  <column datatype='integer' name='recordId' ordinal='0' />
+                  <column datatype='string' name='callKey' ordinal='1' />
+                  <column datatype='string' name='callDateTime' ordinal='2' />
+                  <column datatype='string' name='priority' ordinal='3' />
+                  <column datatype='string' name='district' ordinal='4' />
+                  <column datatype='string' name='description' ordinal='5' />
+                  <column datatype='string' name='callNumber' ordinal='6' />
+                  <column datatype='string' name='incidentLocation' ordinal='7' />
+                  <column datatype='string' name='location' ordinal='8' />
+                  <column datatype='string' name='Neighborhood' ordinal='9' />
+                  <column datatype='string' name='PoliceDistrict' ordinal='10' />
+                  <column datatype='integer' name='PolicePost' ordinal='11' />
+                  <column datatype='integer' name='CouncilDistrict' ordinal='12' />
+                  <column datatype='string' name='SheriffDistricts' ordinal='13' />
+                  <column datatype='string' name='Community_Statistical_Areas' ordinal='14' />
+                  <column datatype='string' name='Census_Tracts' ordinal='15' />
+                  <column datatype='integer' name='ZIPCode' ordinal='16' />
+                  <column datatype='integer' name='NeedsSync' ordinal='17' />
+                  <column datatype='integer' name='ESRI_OID' ordinal='18' />
+                  <column datatype='string' name='F20' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3E90A025-9F78-4008-96E0-CD75140DF68C}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{16E124C4-3AE4-40FA-90C5-ED9691806155}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
